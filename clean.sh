@@ -8,6 +8,6 @@
 
 echo "You are in directory" 
 pwd
-rm -f action kaku rpi433send rpi433d
-rm -f rpi433receive
+rm -f rpi433send rpi433d
+rm -f rpi433receive rpi433queue
 

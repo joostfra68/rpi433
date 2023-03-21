@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# Backup
+Backup
+*.*~
+
+/Default/
+/Sender/
+/Receiver/
+/Queue/
+/Daemon/

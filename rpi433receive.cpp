@@ -1,11 +1,13 @@
 /* 
  * rpi433receive application to read wireless senders with a RaspberryPi
  * Pi needs to be idle for timing to work correctly
- * Version 1.0.0 (20230220) By Frank Joosten https://frankjoosten.nl 
+ * Version 1.2.1 (20230220) By Frank Joosten https://frankjoosten.nl 
  *
  * Makes use of:
  *
- * NewRemoteReceiver library v1.2.0 (20140128) made by Randy Simons http://randysimons.nl/
+ * NewRemoteSwitch library v1.2.1 (20230220) modified by Frank Joosten https://frankjoosten.nl
+ *
+ * NewRemoteSwitch library v1.2.0 (20140128) made by Randy Simons http://randysimons.nl/
  * See NewRemoteReceiver.h for details.
  *
  * License: GPLv3. See license.txt
@@ -22,7 +24,6 @@
 #include <fcntl.h>           /* For O_* constants */
 #include <sys/stat.h>        /* For mode constants */
 #include "NewRemoteReceiver.cpp" 
-// #include "rpi433receive.h"
 
 // Callback function is called only when a valid code is received.
 void showCode(NewRemoteCode receivedCode) {
@@ -74,11 +75,6 @@ int main(int argc, char *argv[]) {
   // Main program loop
   while(1)  
   {
-  // Toggle the LED
-  //digitalWrite(0, !digitalRead(0));
-  //delay(5);
-  //  printf(".");
-  //  usleep(1000);
     sleep(1);
   } 
 

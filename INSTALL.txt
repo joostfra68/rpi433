@@ -1,22 +1,18 @@
 433MHz radio libraries for Raspberry PI
 
+Make sure the wiringpi library is installed.
+I used the version from https://github.com/WiringPi/WiringPi
+
 We use for the transmitter header pin 11 which is WiringPI pin 0
 We use for the receiver header pin 13 which is WiringPI pin 2
 
 Compile and install instructions
 
-OLD: g++ -o 433mhzdaemon 433mhzdaemon.cpp -I/usr/local/include  -L/usr/local/lib -lwiringPi -lrt
-
 Compile Daemon
 g++ -o rpi433d rpi433d.cpp -I/usr/local/include  -L/usr/local/lib -lwiringPi -lrt
 
-OLD: g++ -o 433mhztool 433mhztool.cpp -lrt
-
-Compile Tool
+Compile Queue
 g++ -o rpi433queue rpi433queue.cpp -lrt
-Softlinks maken
-ln -s rpi433queue kaku
-ln -s rpi433queue action
 
 Compile Sender
 g++ -o rpi433send rpi433send.cpp -I/usr/local/include  -L/usr/local/lib -lwiringPi -lrt
@@ -27,12 +23,10 @@ g++ -o rpi433receive rpi433receive.cpp -I/usr/local/include  -L/usr/local/lib -l
 Installing Executeables
 sudo cp rpi433d /usr/sbin
 sudo cp rpi433queue /usr/bin
-#sudo chmod +s /usr/bin/433mhztool
-sudo cp kaku /usr/bin                  <- dit kopieerd de file !!!
-#sudo chmod +s /usr/bin/kaku
-sudo cp action /usr/bin                <- dit kopieerd de file !!!
-#sudo chmod +s /usr/bin/action
+#sudo chmod +s /usr/bin/rpi433queue
 sudo cp rpi433send /usr/bin
+sudo cp rpi433receive /usr/bin
 
+Be aware the receiver will only work if the Raspberry PI is 100% idle.
 
 

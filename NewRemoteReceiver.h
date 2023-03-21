@@ -1,4 +1,6 @@
 /*
+ * NewRemoteSwitch library v1.2.1 (20230220) modified by Frank Joosten https://frankjoosten.nl
+ *
  * NewRemoteSwitch library v1.2.0 (20140128) made by Randy Simons http://randysimons.nl/
  *
  * License: GPLv3. See license.txt
@@ -8,8 +10,6 @@
 #define NewRemoteReceiver_h
 #define boolean unsigned short
 
-// #include <Arduino.h>
-// #include "rpi433receive.h"
 #include "binary.h"
 
 
