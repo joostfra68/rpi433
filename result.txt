@@ -1,0 +1,46 @@
+
+Test results 20230216
+
+Remote 1 I 1
+
+root@jarem0pi:~/rpi433# ./rpi433receive
+WiringPi setting up 
+WiringPi set up, listening for codes..... 
+Addr 3923342 unit 0 off, period: 245 
+us.Addr 3923342 unit 0 off, period: 245 
+us.Addr 3923342 unit 0 off, period: 245 
+us.Addr 3923342 unit 0 off, period: 245 
+us.Addr 3923342 unit 0 off, period: 245 
+^C
+root@jarem0pi:~/rpi433# 
+
+
+Remote 1 I 2
+
+root@jarem0pi:~/rpi433# ./rpi433receive 
+WiringPi setting up 
+WiringPi set up, listening for codes..... 
+Addr 3923342 unit 1 off, period: 245 
+us.Addr 3923342 unit 1 off, period: 246 
+us.Addr 3923342 unit 1 off, period: 245 
+us.Addr 3923342 unit 1 off, period: 245 
+us.Addr 3923342 unit 1 off, period: 245 
+us.Addr 3923342 unit 1 off, period: 245 
+^C
+root@jarem0pi:~/rpi433# 
+
+
+Remite 1 I 3
+
+Addr 3923342 unit 2 off, period: 245
+
+
+Remote 1 II 3
+
+Addr 3923342 unit 6 off, period: 245
+
+So, remote 1 has 1 address : 3923342
+Each button on the remote has own unit.
+These are not in logical order.
+
+

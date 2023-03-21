@@ -1,9 +1,11 @@
 /* 
  * rpi433send application to operate wireless switches with a RaspberryPi
- * Version 1.0.0 (20230220) By Frank Joosten https://frankjoosten.nl 
+ * Version 1.2.1 (20230220) By Frank Joosten https://frankjoosten.nl 
  *
  * Makes use of:
  * 
+ * NewRemoteSwitch library v1.2.1 (20230220) modified by Frank Joosten https://frankjoosten.nl
+ *
  * RemoteSwitch library v2.0.0 made by Randy Simons http://randysimons.nl
  * See RemoteSwitchSender.h for details.
  *
